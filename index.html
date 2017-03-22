@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Seo Site</title>
+	<meta name="viewport" content="width=device-width">
+<!-- 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body ng-app="app">
+
+<!-- 	<loader></loader> -->
+	<navigation></navigation>
+	<main ng-view></main>
+<!-- 	<foot></foot> -->
+
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+	<script src="app/app.js"></script>
+	<script src="app/routes.js"></script>
+	<script src="app/components/main/mainPageCtrl.js"></script>
+	<script src="app/components/contact/contactCtrl.js"></script>
+	<script src="app/components/about/aboutCtrl.js"></script>
+	
+	<script src="app/directives/startCount/statCountDire.js"></script>
+	<script src="app/directives/navigation/navigationDire.js"></script>
+	<script src="app/directives/footer/footerDire.js"></script>
+	<script src="app/directives/loader/loaderDire.js"></script>
+</body>
+</html>
