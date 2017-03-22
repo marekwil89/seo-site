@@ -13,14 +13,15 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: 0; }
 
 html:focus, body:focus, div:focus, span:focus, applet:focus, object:focus, iframe:focus,
 h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus, p:focus, blockquote:focus, pre:focus,
@@ -34,7 +35,7 @@ table:focus, caption:focus, tbody:focus, tfoot:focus, thead:focus, tr:focus, th:
 article:focus, aside:focus, canvas:focus, details:focus, embed:focus,
 figure:focus, figcaption:focus, footer:focus, header:focus, hgroup:focus,
 menu:focus, nav:focus, output:focus, ruby:focus, section:focus, summary:focus,
-time:focus, mark:focus, audio:focus, video:focus {
+time:focus, mark:focus, audio:focus, video:focus, button:focus {
   outline: none; }
 
 /* HTML5 display-role reset for older browsers */
@@ -64,25 +65,65 @@ table {
 
 
 
+.form-section {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
-.info-box {
-  width: 800px;
-  margin-bottom: 45px; }
+.form-section aside {
+  width: 600px;
+  padding: 20px;
+  margin-right: 50px;
+  position: relative; }
 
-.info-box h2 {
-  font-size: 45px;
-  margin-bottom: 25px; }
+.form-section aside h3 {
+  margin-bottom: 25px;
+  font-size: 27px;
+  font-weight: 700; }
 
-.info-box h2:after {
-  content: ".";
-  font-size: 70px;
-  color: #a64ca6; }
+.form-section aside address {
+  border-top: 1px solid #dadada;
+  margin: 30px 0;
+  padding: 20px 0; }
 
-.info-box p {
-  text-align: justify;
-  line-height: 25px; }
+.form-section aside address h4 {
+  margin-bottom: 10px;
+  font-weight: 700; }
 
-header {
+.form-section aside address p {
+  margin: 5px 0;
+  text-indent: 20px; }
+
+.form-section form {
+  border: 1px solid #dadada;
+  padding: 20px;
+  width: 700px; }
+
+.form-section form h3 {
+  margin-bottom: 25px;
+  font-size: 27px;
+  font-weight: 700; }
+
+.form-section form fieldset {
+  margin: 25px 0; }
+
+.form-section form fieldset legend {
+  margin-bottom: 5px; }
+
+.form-section form fieldset input, .form-section form fieldset textarea {
+  width: 100%;
+  border: 1px solid #dadada;
+  padding: 0 7px;
+  line-height: 50px; }
+
+.map-section {
+  width: 100%;
+  border: 1px solid blue;
+  min-height: 100vh; }
+
+.main-header {
   width: 100%;
   min-height: 100vh;
   display: -ms-flexbox;
@@ -95,7 +136,7 @@ header {
   background: #f1f1f1;
   overflow: hidden; }
 
-header .growth-img {
+.main-header .growth-img {
   z-index: 0;
   position: absolute;
   width: 100%;
@@ -107,28 +148,28 @@ header .growth-img {
   background-repeat: no-repeat;
   animation: move-growth-up 1s forwards ease-in-out; }
 
-header .author-box {
+.main-header .author-box {
   margin-right: 900px;
   position: relative; }
 
-header .author-box h1 {
+.main-header .author-box h1 {
   text-indent: 50px;
   font-size: 80px; }
 
-header .author-box p {
+.main-header .author-box p {
   font-style: italic;
   text-indent: 35px;
   font-size: 25px;
   font-weight: 700; }
 
-header .author-box .overlay {
+.main-header .author-box .overlay {
   width: 100%;
-  height: 100%;
+  height: 110%;
   position: absolute;
   background: #f1f1f1;
   animation: show 1.5s forwards linear; }
 
-header .author-box .overlay:before {
+.main-header .author-box .overlay:before {
   content: "";
   width: 100%;
   position: absolute;
@@ -169,6 +210,7 @@ header .author-box .overlay:before {
   height: 350px; }
 
 .service-section .services-box .service h3 {
+  font-size: 27px;
   margin-bottom: 25px;
   font-weight: 700; }
 
@@ -216,7 +258,7 @@ header .author-box .overlay:before {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  background-color: #a64ca6;
+  background: #a64ca6;
   position: relative;
   overflow: hidden;
   padding: 20px; }
@@ -321,3 +363,77 @@ nav .menu li a {
   font-family: 'Inconsolata', monospace;
   letter-spacing: 1.1px;
   color: #191919; }
+
+@charset "UTF-8";
+.btn-main {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #a64ca6;
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
+
+.btn-main:after {
+  content: "Wyślij";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+.btn-main:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -140%;
+  width: 140%;
+  height: 100%;
+  background: rgba(149, 68, 149, 0.8);
+  transition: 0.3s all linear; }
+
+.btn-main:hover:before {
+  -ms-transform: translateX(10%) skew(-20deg);
+      transform: translateX(10%) skew(-20deg);
+  left: -40%; }
+
+.info-box {
+  width: 800px;
+  margin-bottom: 45px; }
+
+.info-box h2 {
+  font-size: 45px;
+  margin-bottom: 25px; }
+
+.info-box h2:after {
+  content: ".";
+  font-size: 70px;
+  color: #a64ca6; }
+
+.info-box p {
+  text-align: justify;
+  line-height: 25px; }
+
+.contact-header, .about-header {
+  width: 100%;
+  min-height: 30vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.contact-header h2, .about-header h2 {
+  font-size: 45px;
+  margin-top: 25px; }
+
+.contact-header h2:after, .about-header h2:after {
+  content: ".";
+  font-size: 70px;
+  color: #a64ca6; }

@@ -1,3 +1,3 @@
-angular.module("mainPageModule", []).controller('mainPageCtrl', function($scope){
+angular.module("aboutModule", []).controller('aboutCtrl', function($scope){
 
 })

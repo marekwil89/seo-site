@@ -3,6 +3,8 @@ angular.module("app", [
 	'navigationDire',
 	'footerDire',
 	'mainPageModule',
+  'contactModule',
+  'aboutModule',
 	'statCountDire',
 	'loaderDire'
 ]);

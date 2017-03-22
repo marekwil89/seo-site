@@ -1,1 +1,60 @@
-<h1>Contact</h1>
+<header class="contact-header">
+  <h2>Contact</h2>
+</header>
+
+<section class="form-section">
+  <aside>
+    <h3>Dwa biura</h3>
+    <address>
+      <h4>Warszawa</h4>
+      <p>ul. Jana Pawła II 33</p>
+      <p>05-077 Warszawa</p>
+      <p>505 737 246</p>
+    </address>
+
+    <address>
+      <h4>Wrocław</h4>
+      <p>ul. Wojska Polskiego II 33</p>
+      <p>05-077 Wrocław</p>
+      <p>777 777 778</p>
+    </address>
+  </aside>
+  <form ng-submit="sendMessage(message)">
+    <h3>Drop us a line</h3>
+    <fieldset>
+      <legend>Imię i Nazwisko:</legend>
+      <input ng-model="message.name" type="text" placeholder="przykladowy@mail.com">
+    </fieldset>
+
+    <fieldset>
+      <legend>Telefon:</legend>
+      <input ng-model="message.phone" type="text" placeholder="888-888-888">
+    </fieldset>
+
+    <fieldset>
+      <legend>Email:</legend>
+      <input ng-model="message.email" type="text" placeholder="przykladowy@mail.com">
+    </fieldset>
+
+    <fieldset>
+      <legend>Adres strony internetowej</legend>
+      <input ng-model="message.siteUrl" type="text" placeholder="www.google.pl">
+    </fieldset>
+
+    <fieldset>
+      <legend>Pytania i uwagi</legend>
+      <textarea type="text" placeholder="przykładowy tekst"></textarea>
+    </fieldset>
+
+    <ul class="errors">
+      <li ng-repeat="error in response">{{error.msg}}</li>
+    </ul>
+
+    <fieldset>
+      <button type="submit" class="btn-main"></button>
+    </fieldset>
+  </form>
+
+</section>
+
+<section class="map-section"></section>
