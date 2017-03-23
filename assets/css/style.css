@@ -64,6 +64,114 @@ table {
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
 
+.about-section {
+  display: -ms-flexbox;
+  display: flex; }
+
+.about-section figure {
+  width: 60%;
+  height: 600px;
+  position: relative;
+  background: url("http://www.leadmill.com/wp-content/uploads/2013/11/the-team.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.about-section aside {
+  width: 40%;
+  padding: 20px; }
+
+.about-section aside h3 {
+  margin: 25px 0;
+  font-size: 27px;
+  font-weight: 700; }
+
+.about-section aside p {
+  text-align: justify;
+  font-size: 20px; }
+
+.timeline-section {
+  padding: 100px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  min-height: 100vh; }
+
+.timeline-section .timeline-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  border: 1px solid green;
+  position: relative; }
+
+.timeline-section .timeline-box:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: red;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+
+.timeline-section .timeline-box li {
+  margin-bottom: 40px;
+  list-style: none;
+  width: 50px;
+  height: 170px;
+  position: relative;
+  border: 1px solid blue;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.timeline-section .timeline-box li:last-child {
+  margin-bottom: 0; }
+
+.timeline-section .timeline-box li .panel {
+  width: 300px;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border: 1px solid red; }
+
+.timeline-section .timeline-box li .panel.right {
+  text-align: left;
+  top: 0;
+  bottom: 0;
+  left: 100%; }
+
+.timeline-section .timeline-box li .panel.left {
+  text-align: right;
+  top: 0;
+  bottom: 0;
+  right: 100%; }
+
+.timeline-section .timeline-box li .panel time {
+  font-weight: 700;
+  color: #111111; }
+
+.timeline-section .timeline-box li .panel p {
+  font-size: 18px; }
 
 .form-section {
   width: 100%;
