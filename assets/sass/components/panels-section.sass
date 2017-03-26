@@ -1,0 +1,101 @@
+.panels-section
+  margin: 100px auto
+  width: 1280px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  min-height: 100vh
+
+  article
+    height: 350px
+    width: 50%
+    display: flex
+    position: relative
+
+    &:nth-child(-n+3)
+      margin-top: 100px
+
+    .panel
+      padding: 20px
+      position: absolute
+      transition: 0.3s all
+      top: 0
+      height: 100%
+      width: 50%
+      z-index: 50
+      
+      h4
+        font-size: 25px
+
+      .panel-info
+        opacity: 0
+        font-size: 18px
+        transition: 0.3s all
+
+        &.show
+          opacity: 1  
+
+      .plus-size
+        cursor: pointer
+        position: absolute
+        bottom: 5px
+        right: 5px
+        text-decoration: none
+        padding: 1px 8px
+        border-radius: 50%
+        background: #f1f1f1
+        font-size: 40px
+        color: #a64ca6
+        transition: 0.3s all
+        
+        &.open
+          transform: rotate(45deg)
+      
+      &.white-bg
+        background: #f1f1f1
+
+      &.left
+        left: 0
+        
+      &.right
+        right: 0
+    
+      &.resize
+        width: 100%
+        z-index: 99
+
+// @media screen and (max-width: 1300px)
+//   .panels
+//     width: 100%
+//     padding: 0 20px
+
+// @media screen and (max-width: 800px)
+//   .panels
+//     article
+//       width: 100%
+//       min-height: 450px
+
+//       &.transparent
+//         display: none
+
+// @media screen and (max-width: 500px)
+//   .panels
+//     article
+//       border-bottom: 1px solid $main-color
+//       .panel
+//         display: block
+//         width: 100%
+//         padding: 0
+
+//         &.white-bg
+//           background: transparent
+
+//         .plus-size
+//           display: none
+
+//         .panel-info
+//           opacity: 1
+
+//       .panel.img-config
+//         display: none

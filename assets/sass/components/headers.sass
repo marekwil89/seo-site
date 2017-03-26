@@ -1,0 +1,91 @@
+.info-box
+  width: 800px
+  margin-bottom: 45px
+  
+  h2
+    font-size: 45px
+    margin-bottom: 25px
+    font-family: 'Inconsolata', monospace
+    letter-spacing: 1.3px
+    
+    &:after
+      content: "."
+      font-size: 70px
+      color: #a64ca6
+    
+  p
+    text-align: justify
+    line-height: 25px
+
+
+.contact-header, .about-header
+  width: 100%
+  min-height: 30vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+  h2
+    font-size: 45px
+    margin-top: 25px
+    font-family: 'Inconsolata', monospace
+    letter-spacing: 1.3px
+    
+    &:after
+      content: "."
+      font-size: 70px
+      color: #a64ca6
+
+
+.main-header
+  width: 100%
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  background: #f1f1f1
+  overflow: hidden
+
+  .growth-img
+    z-index: 0
+    position: absolute
+    width: 100%
+    bottom: -100%
+    right: 0
+    height: 800px
+    background: url("https://blog.shoprocket.co/content/images/2015/12/graph-1-1.png")
+    background-size: cover
+    background-repeat: no-repeat
+    animation: move-growth-up 1s forwards ease-in-out
+
+  .author-box
+    margin-right: 900px
+    position: relative
+
+    h1
+      text-indent: 50px
+      font-size: 80px
+      font-family: 'Inconsolata', monospace
+      letter-spacing: 1.3px
+      
+    p
+      font-style: italic
+      text-indent: 35px
+      font-size: 22px
+      font-weight: 300
+
+    .overlay
+      width: 100%
+      height: 110%
+      position: absolute
+      background: #f1f1f1
+      animation: show 1.5s forwards linear
+
+      &:before
+        content: ""
+        width: 100%
+        position: absolute
+        min-height: 100%
+        border-right: 2px solid #191919
+        animation: blink 0.7s infinite linear
