@@ -1,70 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain) */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-  outline: 0; }
-
-html:focus, body:focus, div:focus, span:focus, applet:focus, object:focus, iframe:focus,
-h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus, p:focus, blockquote:focus, pre:focus,
-a:focus, abbr:focus, acronym:focus, address:focus, big:focus, cite:focus, code:focus,
-del:focus, dfn:focus, em:focus, img:focus, ins:focus, kbd:focus, q:focus, s:focus, samp:focus,
-small:focus, strike:focus, strong:focus, sub:focus, sup:focus, tt:focus, var:focus,
-b:focus, u:focus, i:focus, center:focus,
-dl:focus, dt:focus, dd:focus, ol:focus, ul:focus, li:focus,
-fieldset:focus, form:focus, label:focus, legend:focus,
-table:focus, caption:focus, tbody:focus, tfoot:focus, thead:focus, tr:focus, th:focus, td:focus,
-article:focus, aside:focus, canvas:focus, details:focus, embed:focus,
-figure:focus, figcaption:focus, footer:focus, header:focus, hgroup:focus,
-menu:focus, nav:focus, output:focus, ruby:focus, section:focus, summary:focus,
-time:focus, mark:focus, audio:focus, video:focus, button:focus {
-  outline: none; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
-
-
 .about-section {
   display: -ms-flexbox;
   display: flex;
@@ -73,14 +6,14 @@ table {
   overflow: hidden; }
 
 .about-section .overlay-square {
-  -ms-transform: rotate(-30deg);
-      transform: rotate(-30deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -400px;
   width: 700px;
   height: 700px;
-  background: #a64ca6; }
+  background: #cb8dcb; }
 
 .about-section figure {
   width: 60%;
@@ -623,6 +556,73 @@ table {
 .timeline-section .timeline-box li .event p {
   line-height: 25px; }
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0; }
+
+html:focus, body:focus, div:focus, span:focus, applet:focus, object:focus, iframe:focus,
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus, p:focus, blockquote:focus, pre:focus,
+a:focus, abbr:focus, acronym:focus, address:focus, big:focus, cite:focus, code:focus,
+del:focus, dfn:focus, em:focus, img:focus, ins:focus, kbd:focus, q:focus, s:focus, samp:focus,
+small:focus, strike:focus, strong:focus, sub:focus, sup:focus, tt:focus, var:focus,
+b:focus, u:focus, i:focus, center:focus,
+dl:focus, dt:focus, dd:focus, ol:focus, ul:focus, li:focus,
+fieldset:focus, form:focus, label:focus, legend:focus,
+table:focus, caption:focus, tbody:focus, tfoot:focus, thead:focus, tr:focus, th:focus, td:focus,
+article:focus, aside:focus, canvas:focus, details:focus, embed:focus,
+figure:focus, figcaption:focus, footer:focus, header:focus, hgroup:focus,
+menu:focus, nav:focus, output:focus, ruby:focus, section:focus, summary:focus,
+time:focus, mark:focus, audio:focus, video:focus, button:focus {
+  outline: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+
 footer {
   display: -ms-flexbox;
   display: flex;
@@ -745,6 +745,18 @@ nav .menu li a {
 
 .slideInUp {
   animation: slideInUp ease-out 0.5s forwards; }
+
+@keyframes moveSquare {
+  from {
+    right: -400px;
+    transform: rotate(0deg); }
+  to {
+    right: 0px;
+    transform: rotate(-30deg);
+    opacity: 1; } }
+
+.moveSquare {
+  animation: moveSquare ease-out 0.5s forwards; }
 
 * {
   margin: 0;

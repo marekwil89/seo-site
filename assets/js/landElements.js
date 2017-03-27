@@ -13,6 +13,11 @@ var landElements = [
     elementClass: ".office-address",
     sectionClass: ".form-section",
     animationName: "slideInUp"
+  },
+  {
+    elementClass: ".overlay-square",
+    sectionClass: ".about-section",
+    animationName: "moveSquare"
   }
 ]
 
@@ -22,7 +27,7 @@ $(window).scroll(function(){
 
   for(var i = 0; i < landElements.length; i++){
     if($(landElements[i].sectionClass).length || $(landElements[i].elementClass).length){
-      if(wScroll > $(landElements[i].sectionClass).offset().top - ($(window).height()/2.5)){
+      if(wScroll >= $(landElements[i].sectionClass).offset().top - ($(window).height()/3)){
         $(landElements[i].elementClass).each(function(index){
           var that = this;
           var animationName = landElements[i].animationName
