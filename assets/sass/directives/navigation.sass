@@ -1,8 +1,8 @@
 nav
   width: 100%
-  background: rgba(#a64ca6, 0.9) 
+  background: #191919
   position: fixed
-  z-index: 99
+  z-index: 999
   
 
   .clear-both
@@ -10,10 +10,14 @@ nav
   
   .logo
     margin-left: 30px
-    line-height: 50px
     font-size: 35px
-    color: #f1f1f1
+    color: #A1A3A4
     
+    .fa-slack
+      font-size: 35px
+      color: #a64ca6
+      line-height: 58px
+
   .menu
     margin-right: 30px
     padding: 0
@@ -22,8 +26,14 @@ nav
     li
       display: inline-block
       line-height: 50px
-      margin-left: 10px
+      margin-left: 50px
+      border-bottom: 5px solid transparent
+      border-top: 5px solid transparent
+      transition: 0.3s all
+
+      &:hover
+        border-bottom: 5px solid #f1f1f1
       
       a
         display: block
-        color: #f1f1f1
+        color: #A1A3A4

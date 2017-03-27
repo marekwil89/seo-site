@@ -5,19 +5,13 @@
 <section class="form-section">
   <aside>
     <h3>Dwa biura</h3>
-    <address>
-      <h4>Warszawa</h4>
-      <p>ul. Jana Pawła II 33</p>
-      <p>05-077 Warszawa</p>
-      <p>505 737 246</p>
+    <address ng-repeat="place in markers" class="office-address land-elem">
+      <h4>{{place.city}}</h4>
+      <p>{{place.street}}</p>
+      <p>{{place.zip}} {{place.city}}</p>
+      <p>{{place.phone}}</p>
     </address>
 
-    <address>
-      <h4>Wrocław</h4>
-      <p>ul. Wojska Polskiego II 33</p>
-      <p>05-077 Wrocław</p>
-      <p>777 777 778</p>
-    </address>
   </aside>
   <form ng-submit="sendMessage(message)">
     <h3>Drop us a line</h3>
@@ -57,4 +51,12 @@
 
 </section>
 
-<section class="map-section"></section>
+<section class="map-section">
+  <ng-map zoom="6" center="Poland">
+    <custom-marker ng-repeat="marker in markers" position="{{marker.fullAddress}}">
+      <div class="marker-box">
+        <h5>Biuro {{marker.city}}</h5>
+      </div>
+    </custom-marker>
+  </ng-map>
+</section>

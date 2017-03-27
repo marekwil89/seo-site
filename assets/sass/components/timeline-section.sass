@@ -12,18 +12,17 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    border: 1px solid green
     position: relative
 
     &:before
       content: ''
       position: absolute
       left: 50%
-      top: 0
-      height: 100%
+      top: 50%
+      height: 80%
       width: 2px
-      background: red
-      transform: translateX(-50%)
+      background: #191919
+      transform: translate(-50%, -50%)
     
     li
       margin-bottom: 40px
@@ -31,21 +30,30 @@
       width: 50px
       height: 170px
       position: relative
-      border: 1px solid blue
       display: flex
       justify-content: center
       align-items: center
+
+      &:before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 25px
+        height: 25px
+        background: darken(#a64ca6, 30%)
+        overflow: hidden
       
       &:last-child
         margin-bottom: 0
 
-      .panel
+      .event
         width: 300px
         position: absolute
         display: flex
         flex-direction: column
         justify-content: center
-        border: 1px solid red
 
         &.right
           text-align: left
@@ -59,9 +67,9 @@
           bottom: 0
           right: 100%
 
-        time
+        h3
+          font-size: 23px
+          margin-bottom: 10px
           font-weight: 700
-          color: #111111
-
         p
-          font-size: 18px
+          line-height: 25px

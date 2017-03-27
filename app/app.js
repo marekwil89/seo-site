@@ -6,5 +6,6 @@ angular.module("app", [
   'contactModule',
   'aboutModule',
 	'statCountDire',
-	'loaderDire'
+	'loaderDire',
+  'ngMap'
 ]);
