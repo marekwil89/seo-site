@@ -12,7 +12,7 @@
 
 <!-- 	<loader></loader> -->
 	<navigation></navigation>
-	<main ng-view></main>
+	<main ng-view autoscroll="true"></main>
 	<foot></foot>
 
 
@@ -20,10 +20,12 @@
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
-	<script src="http://maps.google.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkMb1wxiN14JOIehgx685On8bNTPTFVl0&libraries=places"></script>
+<!-- 	// <script src="http://maps.google.com/maps/api/js"></script> -->
 
 	<script src="assets/js/landElements.js"></script>
-	
+
+
 	<script src="app/app.js"></script>
 	<script src="app/routes.js"></script>
 	<script src="app/components/main/mainPageCtrl.js"></script>
