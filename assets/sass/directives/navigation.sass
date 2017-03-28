@@ -1,39 +1,67 @@
-nav
-  width: 100%
-  background: #191919
+.side-menu
+  z-index: 1200
   position: fixed
-  z-index: 999
-  
+  top: 0
+  min-height: 100vh
+  right: -400px
+  background: #191919
+  transition: 0.3s all
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
 
-  .clear-both
-    clear: both
-  
-  .logo
-    margin-left: 30px
-    font-size: 35px
-    color: #A1A3A4
-    
-    .fa-slack
-      font-size: 35px
-      color: #a64ca6
-      line-height: 58px
+  a
+    margin: 20px 100px
+    color: #f1f1f1
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1.3px
 
-  .menu
-    margin-right: 30px
-    padding: 0
-    float: right
-    
-    li
-      display: inline-block
-      line-height: 50px
-      margin-left: 50px
-      border-bottom: 5px solid transparent
-      border-top: 5px solid transparent
-      transition: 0.3s all
 
-      &:hover
-        border-bottom: 5px solid #f1f1f1
-      
-      a
-        display: block
-        color: #A1A3A4
+.side-menu-trigger
+  z-index: 1230
+  width: 100%
+  cursor: pointer
+  width: 40px
+  height: 40px
+  margin: 10px 20px
+  border: none
+  border-top: 5px solid #191919
+  position: fixed
+  top: 20px
+  right: 20px
+  background: transparent
+  transition: 0.3s all
+
+  &:focus
+    border-top: none
+    &:before
+      transform: rotate(-45deg) translate(-12.5px, 12.5px )
+      border-top: 5px solid #f1f1f1
+    &:after
+      transform: rotate(45deg) translate(-12.5px, -12.5px )
+      border-top: 5px solid #f1f1f1
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 100%
+    border-top: 5px solid #191919
+    transform: translateY(12.5px)
+    transition: 0.3s all
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    transform: translateY(0px)
+    border-top: 5px solid #191919
+    transition: 0.3s all
+
+.side-menu-trigger:focus + .side-menu, .side-menu:hover
+  right: 0

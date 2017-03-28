@@ -54,9 +54,11 @@
 <section class="map-section">
   <ng-map zoom="6" center="Poland">
     <custom-marker ng-repeat="marker in markers" position="{{marker.fullAddress}}">
+      
       <div class="marker-box">
         <h5>Biuro {{marker.city}}</h5>
       </div>
     </custom-marker>
+
   </ng-map>
 </section>
