@@ -1,9 +1,12 @@
 angular.module("contactModule", [])
 
 
-.controller('contactCtrl', function($scope, NgMap){
-  $scope.sendMessage = function(){
-    alert('dupa')
+.controller('contactCtrl', function($scope, NgMap, $http){
+
+  $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded"
+
+  $scope.sendMessage = function(message){
+    $http.post( 'https://script.google.com/macros/s/AKfycby-32X1AvMqBU0AQ0Av2BSBD6K9QOtWEjfchYI7zxZEDk9F-qdt/exec', message)
   }
 
   $scope.markers = [

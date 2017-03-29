@@ -13,31 +13,66 @@
     </address>
 
   </aside>
-  <form ng-submit="sendMessage(message)">
+<!--   <form method="POST" action="https://script.google.com/macros/s/AKfycby-32X1AvMqBU0AQ0Av2BSBD6K9QOtWEjfchYI7zxZEDk9F-qdt/exec">
     <h3>Drop us a line</h3>
     <fieldset>
       <legend>Imię i Nazwisko:</legend>
-      <input ng-model="message.name" type="text" placeholder="przykladowy@mail.com">
+      <input ng-model="message.name" name="name" type="text" placeholder="przykladowy@mail.com">
     </fieldset>
 
     <fieldset>
       <legend>Telefon:</legend>
-      <input ng-model="message.phone" type="text" placeholder="888-888-888">
+      <input ng-model="message.phone" name="phone" type="text" placeholder="888-888-888">
     </fieldset>
 
     <fieldset>
       <legend>Email:</legend>
-      <input ng-model="message.email" type="text" placeholder="przykladowy@mail.com">
+      <input ng-model="message.email" name="email" type="text" placeholder="przykladowy@mail.com">
     </fieldset>
 
     <fieldset>
       <legend>Adres strony internetowej</legend>
-      <input ng-model="message.siteUrl" type="text" placeholder="www.google.pl">
+      <input ng-model="message.siteUrl" name="web" type="text" placeholder="www.google.pl">
     </fieldset>
 
     <fieldset>
       <legend>Pytania i uwagi</legend>
-      <textarea type="text" placeholder="przykładowy tekst"></textarea>
+      <textarea type="text" name="text" placeholder="przykładowy tekst"></textarea>
+    </fieldset>
+
+    <ul class="errors">
+      <li ng-repeat="error in response">{{error.msg}}</li>
+    </ul>
+
+    <fieldset>
+      <button type="submit" class="btn-main"></button>
+    </fieldset>
+  </form> -->
+  <form ng-submit="sendMessage(message)">
+    <h3>Drop us a line</h3>
+    <fieldset>
+      <legend>Imię i Nazwisko:</legend>
+      <input ng-model="message.name" name="name" type="text" placeholder="przykladowy@mail.com">
+    </fieldset>
+
+    <fieldset>
+      <legend>Telefon:</legend>
+      <input ng-model="message.phone" name="phone" type="text" placeholder="888-888-888">
+    </fieldset>
+
+    <fieldset>
+      <legend>Email:</legend>
+      <input ng-model="message.email" name="email" type="text" placeholder="przykladowy@mail.com">
+    </fieldset>
+
+    <fieldset>
+      <legend>Adres strony internetowej</legend>
+      <input ng-model="message.siteUrl" name="web" type="text" placeholder="www.google.pl">
+    </fieldset>
+
+    <fieldset>
+      <legend>Pytania i uwagi</legend>
+      <textarea type="text" name="text" placeholder="przykładowy tekst"></textarea>
     </fieldset>
 
     <ul class="errors">
