@@ -13,8 +13,8 @@
     flex-wrap: wrap
     
     .service
-      width: calc(100% * (1/3) - 30px - 30px)
-      margin: 30px
+      width: calc(100% * (1/3) - 20px - 20px)
+      margin: 20px
       padding: 20px
       border: 1px solid #dadada
       transition: 0.3s all
@@ -35,3 +35,27 @@
       p
         text-align: justify
         line-height: 25px
+
+@media (max-width: 1520px)
+  .service-section
+    .services-box
+      width: 100%
+      margin: 0 20px
+
+
+@media (max-width: 1000px)
+  .service-section
+    .services-box
+      .service
+        width: calc(100% * (2/4) - 20px - 20px)
+        figure
+          padding: 20px
+
+        p
+          text-align: left
+
+@media (max-width: 550px)
+  .service-section
+    .services-box
+      .service
+        width: calc(100% * (4/4) - 20px - 20px)

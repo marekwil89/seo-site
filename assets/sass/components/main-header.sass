@@ -1,41 +1,3 @@
-.info-box
-  width: 800px
-  margin-bottom: 45px
-  
-  h2
-    font-size: 45px
-    margin-bottom: 50px
-    font-family: 'Inconsolata', monospace
-    letter-spacing: 1.3px
-    
-    &:after
-      content: "."
-      font-size: 70px
-      color: #a64ca6
-    
-  p
-    text-align: justify
-    line-height: 25px
-
-
-.contact-header, .about-header
-  width: 100%
-  min-height: 30vh
-  display: flex
-  justify-content: center
-  align-items: center
-
-  h2
-    font-size: 45px
-    font-family: 'Inconsolata', monospace
-    letter-spacing: 1.3px
-    
-    &:after
-      content: "."
-      font-size: 70px
-      color: #a64ca6
-
-
 .main-header
   width: 100%
   min-height: 100vh
@@ -53,7 +15,6 @@
     bottom: 30px
     left: 50%
     transform: translateY(-50%)
-    
     
     .fa-chevron-down
       transition: 0.3s all
@@ -84,6 +45,7 @@
     h1
       text-indent: 45px
       font-size: 60px
+      font-weight: 700
       margin-bottom: 10px
       font-family: 'Inconsolata', monospace
       letter-spacing: 1.3px
@@ -93,9 +55,10 @@
       font-size: 20px
       text-transform: uppercase
       text-indent : 60px
+      line-height: 30px
       
     .author
-      margin-top: 30px
+      margin: 30px 30px 0 0
       font-style: italic
       float: right
       font-size: 17px
@@ -112,6 +75,27 @@
         content: ""
         width: 100%
         position: absolute
-        min-height: 85%
+        min-height: 75%
         border-right: 2px solid #191919
         animation: blink 0.7s infinite linear
+
+
+@media (max-width: 1300px)
+  .main-header
+    .author-box
+      margin: 0 auto
+      
+@media (max-width: 780px)
+  .main-header
+    .author-box
+      .main-text, h1
+        text-indent: 0
+        margin-left: 20px
+  
+@media (max-width: 440px)
+  .main-header
+    .author-box
+      margin: 0
+      padding: 0 10px
+      h1
+        font-size: 40px

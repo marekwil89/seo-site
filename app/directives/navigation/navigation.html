@@ -1,19 +1,6 @@
-<!-- <nav>
-<a href="" class="logo"><i class="fa fa-slack" aria-hidden="true"></i> </a>
-  <ul ng-if="toggle" ng-class="{'open' : toggle}" class="menu">
-    <li><a href="#/main-page">Strona główna</a></li>
-    <li><a href="#/about">O nas</a></li>
-    <li><a href="#/contact">Kontakt</a></li>
-    
-  </ul>
-<div class="clear-both"></div>
-  <button ng-click="toggle = !toggle" ng-class="{'open' : toggle}" class="hamburger"></button>
-</nav> -->
+<button ng-click="isActive = !isActive" ng-class="{'opened': isActive}" class="side-menu-trigger"></button>
 
-
-<button class="side-menu-trigger hamburger"></button>
-
-<nav class="side-menu">
+<nav ng-class="{'opened': isActive}" class="side-menu">
   
   <a href="#/main-page">Strona główna</a>
   <a href="#/about">O nas</a>

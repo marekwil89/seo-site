@@ -16,9 +16,15 @@ var landElements = [
   },
   {
     elementClass: ".overlay-square",
-    sectionClass: ".about-section",
+    sectionClass: ".team-section",
     animationName: "moveSquare"
+  },
+  {
+    elementClass: ".overlay-rectangle",
+    sectionClass: ".form-section",
+    animationName: "moveRectangle"
   }
+
 ]
 
 $(window).scroll(function(){

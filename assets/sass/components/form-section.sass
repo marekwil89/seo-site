@@ -3,11 +3,21 @@
   display: flex
   justify-content: center
   margin: 30px 0
+  position: relative
+  overflow: hidden
+
+  .overlay-rectangle
+    z-index: -1
+    transform: rotate(0deg)
+    position: absolute
+    right: -400px
+    width: 2000px
+    height: 700px
+    background: lighten(#a64ca6, 35%) 
 
   aside
     width: 600px
     padding: 20px
-    margin-right: 50px
     position: relative
     overflow: hidden
 
@@ -31,7 +41,9 @@
 
   form
     border: 1px solid #dadada
+    background: #FFFFFF
     padding: 20px
+    margin-right: 50px
     width: 700px
 
     h3
@@ -54,3 +66,25 @@
         &:focus, &:active
           outline: none
           border: 1px solid #a64ca6
+
+@media (max-width: 1420px)
+  .form-section
+    aside
+      width: 40%
+
+    form
+      width: 60%
+
+@media (max-width: 800px)
+  .form-section
+    display: block
+    aside
+      width: 100%
+
+    form
+      width: 100%
+      margin-right: 0
+      margin-bottom: 50px
+
+    .overlay-rectangle
+      display: none

@@ -8,10 +8,6 @@
   min-height: 100vh
 
   .timeline-box
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
     position: relative
 
     &:before
@@ -73,3 +69,27 @@
           font-weight: 700
         p
           line-height: 25px
+
+@media screen and (max-width: 730px)
+  .timeline-section
+    display: block
+    .timeline-box
+
+      &:before
+        display: none
+
+      li
+        .event
+          width: 400px
+          &.left
+            text-align: left
+            left: 100%
+            right: 0
+
+@media screen and (max-width: 500px)
+  .timeline-section
+    .timeline-box
+      li
+        .event
+          width: 200px
+

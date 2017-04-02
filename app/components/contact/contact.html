@@ -3,51 +3,7 @@
 </header>
 
 <section class="form-section">
-  <aside>
-    <h3>Dwa biura</h3>
-    <address ng-repeat="place in markers" class="office-address land-elem">
-      <h4>{{place.city}}</h4>
-      <p>{{place.street}}</p>
-      <p>{{place.zip}} {{place.city}}</p>
-      <p>{{place.phone}}</p>
-    </address>
 
-  </aside>
-<!--   <form method="POST" action="https://script.google.com/macros/s/AKfycby-32X1AvMqBU0AQ0Av2BSBD6K9QOtWEjfchYI7zxZEDk9F-qdt/exec">
-    <h3>Drop us a line</h3>
-    <fieldset>
-      <legend>Imię i Nazwisko:</legend>
-      <input ng-model="message.name" name="name" type="text" placeholder="przykladowy@mail.com">
-    </fieldset>
-
-    <fieldset>
-      <legend>Telefon:</legend>
-      <input ng-model="message.phone" name="phone" type="text" placeholder="888-888-888">
-    </fieldset>
-
-    <fieldset>
-      <legend>Email:</legend>
-      <input ng-model="message.email" name="email" type="text" placeholder="przykladowy@mail.com">
-    </fieldset>
-
-    <fieldset>
-      <legend>Adres strony internetowej</legend>
-      <input ng-model="message.siteUrl" name="web" type="text" placeholder="www.google.pl">
-    </fieldset>
-
-    <fieldset>
-      <legend>Pytania i uwagi</legend>
-      <textarea type="text" name="text" placeholder="przykładowy tekst"></textarea>
-    </fieldset>
-
-    <ul class="errors">
-      <li ng-repeat="error in response">{{error.msg}}</li>
-    </ul>
-
-    <fieldset>
-      <button type="submit" class="btn-main"></button>
-    </fieldset>
-  </form> -->
   <form ng-submit="sendMessage(message)">
     <h3>Drop us a line</h3>
     <fieldset>
@@ -72,7 +28,7 @@
 
     <fieldset>
       <legend>Pytania i uwagi</legend>
-      <textarea type="text" name="text" placeholder="przykładowy tekst"></textarea>
+      <textarea ng-model="message.text" type="text" name="text" placeholder="przykładowy tekst"></textarea>
     </fieldset>
 
     <ul class="errors">
@@ -83,6 +39,20 @@
       <button type="submit" class="btn-main"></button>
     </fieldset>
   </form>
+
+  <aside>
+    <h3>Dwa biura</h3>
+    <address ng-repeat="place in markers" class="office-address land-elem">
+      <h4>{{place.city}}</h4>
+      <p>{{place.street}}</p>
+      <p>{{place.zip}} {{place.city}}</p>
+      <p>{{place.phone}}</p>
+    </address>
+  </aside>
+
+  <span class="overlay-rectangle land-elem"></span>
+
+
 
 </section>
 

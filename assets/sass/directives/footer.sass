@@ -3,7 +3,7 @@ footer
   justify-content: center
   align-items: center
   flex-direction: column
-  min-height: 20vh
+  padding: 20px
   width: 100%
   background: #191919
   position: relative
@@ -14,8 +14,8 @@ footer
 
     li
       display: inline-block
-      margin: 0 10px
-      
+      margin: 0 5px
+
       .fa
         padding: 10px 12px
         font-size: 20px
@@ -28,5 +28,17 @@ footer
           color: #f1f1f1
           
   .copyright
+    text-align: center
     color: #A1A3A4
-  
+    line-height: 25px
+
+  .design-by
+    color: #A1A3A4
+    text-align: center
+
+    a
+      color: lighten(#a64ca6, 10%) 
+      font-weight: 700
+
+      &:hover
+        text-decoration: underline

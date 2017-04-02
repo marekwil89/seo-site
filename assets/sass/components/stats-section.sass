@@ -1,12 +1,11 @@
 .stats-section
-  padding: 100px 0
+  padding: 100px 0 0 0
   width: 100%
-  min-height: 70vh
   display: flex
   justify-content: center
   align-items: center
   flex-direction: column
-
+  
   .stats-box
     width: 900px
     display: flex
@@ -14,9 +13,29 @@
     
     .stat
       text-align: center
-      flex: 1 1 auto
-      margin: 20px
+      width: calc(100% * (1/4) - 5px - 5px)
+      margin: 5px
 
       .number
         font-size: 50px
         margin: 10px 0
+
+@media (max-width: 920px)
+  .stats-section
+    .stats-box
+      width: 100%
+
+
+@media (max-width: 750px)
+  .stats-section
+    .stats-box
+      .stat
+        width: calc(100% * (2/4) - 5px - 5px)
+
+
+@media (max-width: 500px)
+  .stats-section
+    .stats-box
+      .stat
+        margin-bottom: 30px
+        width: calc(100% * (4/4) - 5px - 5px)
