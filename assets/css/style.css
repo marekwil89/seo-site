@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #191919;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.1px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain) */
@@ -326,7 +333,7 @@ table {
 .main-header .move-down {
   z-index: 99;
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   left: 50%;
   -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
@@ -814,7 +821,9 @@ footer {
   padding: 20px;
   width: 100%;
   background: #191919;
-  position: relative; }
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.1px; }
 
 footer .social-icons {
   margin: 20px 0; }
@@ -996,13 +1005,6 @@ footer .design-by a:hover {
 
 .moveRectangle {
   animation: moveRectangle ease-out 0.5s forwards; }
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  letter-spacing: 1.1px;
-  color: #191919;
-  font-family: 'Open Sans', sans-serif; }
 
 @charset "UTF-8";
 .btn-main {
