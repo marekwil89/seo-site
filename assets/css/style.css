@@ -218,7 +218,7 @@ table {
     margin-right: 0;
     margin-bottom: 50px; }
   .form-section .overlay-rectangle {
-    display: none; } }
+    bottom: 10%; } }
 
 .hire-section {
   min-height: 40vh;
