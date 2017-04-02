@@ -857,7 +857,7 @@ footer .design-by a:hover {
   min-height: 100vh;
   right: -100%;
   background: #191919;
-  transition: 0.5s all;
+  transition: 0.3s all;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
