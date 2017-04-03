@@ -7,5 +7,8 @@ angular.module("app", [
   'aboutModule',
 	'statCountDire',
 	'loaderDire',
-  'ngMap'
+  'ngMap',
+  'validation',
+  'validation.rule',
+  'ngSanitize'
 ]);

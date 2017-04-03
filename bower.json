@@ -17,6 +17,7 @@
     "jquery": "^3.2.1",
     "components-font-awesome": "^4.7.0",
     "angular-google-maps": "^2.4.1",
-    "ngmap": "^1.18.4"
+    "ngmap": "^1.18.4",
+    "angular-validation": "^1.4.3"
   }
 }
