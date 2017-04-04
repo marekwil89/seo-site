@@ -20,6 +20,11 @@ var landElements = [
     animationName: "moveSquare"
   },
   {
+    elementClass: ".overlay-shape",
+    sectionClass: ".chart-section",
+    animationName: "moveShape"
+  },
+  {
     elementClass: ".overlay-rectangle",
     sectionClass: ".form-section",
     animationName: "moveRectangle"
@@ -45,3 +50,5 @@ $(window).scroll(function(){
     }
   }
 });
+
+// moveShape

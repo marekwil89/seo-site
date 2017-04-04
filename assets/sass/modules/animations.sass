@@ -18,6 +18,13 @@
   100%
     right: -800px
 
+@keyframes icon-move-down
+  0%
+    transform: translateY(0px)
+  50%
+    transform: translateY(10px)
+  100%
+    transform: translateY(0px)
 
 @keyframes ring
   0%
@@ -70,3 +77,18 @@
 
 .moveRectangle 
   animation: moveRectangle ease-out 0.5s forwards
+
+
+@keyframes moveShape
+  from 
+    left: -30%
+    background: rgba(#191919, 0)
+    top: -100%
+
+  to 
+    left: -30%
+    background: rgba(#191919, 0.9)
+    top: 0
+
+.moveShape 
+  animation: moveShape linear 0.3s forwards
