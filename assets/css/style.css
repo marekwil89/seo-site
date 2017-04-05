@@ -410,7 +410,7 @@ table {
   margin-top: 20px;
   font-size: 20px;
   text-transform: uppercase;
-  text-indent: 60px;
+  margin-left: 40px;
   line-height: 30px; }
 
 .main-header article .author-box .author {
@@ -474,6 +474,15 @@ table {
     width: 100%; }
   .main-header aside {
     display: none; } }
+
+@media screen and (max-width: 620px) {
+  .main-header article .author-box h1 {
+    font-size: 35px;
+    text-indent: 20px; }
+  .main-header article .author-box .main-text {
+    font-size: 18px; }
+  .main-header article .author-box .author {
+    font-size: 15px; } }
 
 .map-section {
   width: 100%;
