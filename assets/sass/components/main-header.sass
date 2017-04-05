@@ -8,7 +8,7 @@
   .move-down
     z-index: 99
     position: absolute
-    bottom: 60px
+    bottom: 30px
     left: 50%
     transform: translateY(-50%)
     
@@ -37,28 +37,28 @@
         margin-bottom: 10px
         font-family: 'Inconsolata', monospace
         letter-spacing: 1.3px
-
+  
       .main-text
         margin-top: 20px
         font-size: 20px
         text-transform: uppercase
         text-indent : 60px
         line-height: 30px
-
+  
       .author
         margin: 30px 30px 0 0
         font-style: italic
         float: right
         font-size: 17px
         font-weight: 300
-
+  
       .word-overlay
         width: 100%
         height: 100%
         position: absolute
         background: #f1f1f1
         animation: word-overlay 1.5s forwards linear
-
+  
         &:before
           content: ""
           width: 100%
@@ -93,3 +93,18 @@
       height: 100%
       background: rgba(#A64CA6, 0.0)
       animation: color-overlay 1s forwards linear
+
+
+@media screen and (max-width: 1300px)
+  .main-header
+    article
+      width: 60%
+    aside
+      width: 40%
+
+@media screen and (max-width: 1050px)
+  .main-header
+    article
+      width: 100%
+    aside
+      display: none

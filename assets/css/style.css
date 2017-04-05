@@ -372,7 +372,7 @@ table {
 .main-header .move-down {
   z-index: 99;
   position: absolute;
-  bottom: 60px;
+  bottom: 30px;
   left: 50%;
   -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
@@ -462,6 +462,18 @@ table {
   height: 100%;
   background: rgba(166, 76, 166, 0);
   animation: color-overlay 1s forwards linear; }
+
+@media screen and (max-width: 1300px) {
+  .main-header article {
+    width: 60%; }
+  .main-header aside {
+    width: 40%; } }
+
+@media screen and (max-width: 1050px) {
+  .main-header article {
+    width: 100%; }
+  .main-header aside {
+    display: none; } }
 
 .map-section {
   width: 100%;
