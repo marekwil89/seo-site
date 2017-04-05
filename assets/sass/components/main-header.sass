@@ -1,13 +1,9 @@
 .main-header
-  width: 100%
   min-height: 100vh
   display: flex
-  justify-content: center
-  align-items: center
-  flex-direction: column
-  position: relative
-  background: #f1f1f1
   overflow: hidden
+  background: #f1f1f1
+  position: relative
 
   .move-down
     z-index: 99
@@ -21,78 +17,79 @@
       font-size: 30px
       cursor: pointer
       animation: icon-move-down 1s infinite
-      
-  .growth-img
-    z-index: 0
-    position: absolute
-    width: 100%
-    bottom: 0
-    right: -1200px
-    height: 800px
-    background: url("https://blog.shoprocket.co/content/images/2015/12/graph-1-1.png")
-    transform: rotate(-40deg)
-    background-size: cover
-    background-repeat: no-repeat
-    animation: move-growth-up 1.2s forwards
 
-  .author-box
-    margin-right: 550px
-    position: relative
+  article
+    width: 50%
+    background: white
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #f1f1f1
 
-    h1
-      text-indent: 45px
-      font-size: 60px
-      font-weight: 700
-      margin-bottom: 10px
-      font-family: 'Inconsolata', monospace
-      letter-spacing: 1.3px
-      
-    .main-text
-      margin-top: 20px
-      font-size: 20px
-      text-transform: uppercase
-      text-indent : 60px
-      line-height: 30px
-      
-    .author
-      margin: 30px 30px 0 0
-      font-style: italic
-      float: right
-      font-size: 17px
-      font-weight: 300
-      
-    .overlay
-      width: 100%
-      height: 110%
-      position: absolute
-      background: #f1f1f1
-      animation: move-overlay 1.5s forwards linear
-
-      &:before
-        content: ""
-        width: 100%
-        position: absolute
-        min-height: 75%
-        border-right: 2px solid #191919
-        animation: blink 0.7s infinite linear
-
-
-@media (max-width: 1300px)
-  .main-header
     .author-box
-      margin: 0 auto
+      position: relative
+      overflow: hidden
       
-@media (max-width: 780px)
-  .main-header
-    .author-box
-      .main-text, h1
-        text-indent: 0
-        margin-left: 20px
-  
-@media (max-width: 440px)
-  .main-header
-    .author-box
-      margin: 0
-      padding: 0 10px
       h1
-        font-size: 40px
+        text-indent: 45px
+        font-size: 60px
+        font-weight: 400
+        margin-bottom: 10px
+        font-family: 'Inconsolata', monospace
+        letter-spacing: 1.3px
+
+      .main-text
+        margin-top: 20px
+        font-size: 20px
+        text-transform: uppercase
+        text-indent : 60px
+        line-height: 30px
+
+      .author
+        margin: 30px 30px 0 0
+        font-style: italic
+        float: right
+        font-size: 17px
+        font-weight: 300
+
+      .word-overlay
+        width: 100%
+        height: 100%
+        position: absolute
+        background: #f1f1f1
+        animation: word-overlay 1.5s forwards linear
+
+        &:before
+          content: ""
+          width: 100%
+          position: absolute
+          min-height: 75%
+          border-right: 2px solid #999999
+          animation: blink 0.7s infinite linear
+        
+  aside
+    width: 50%
+    position: relative
+    transform: skew(-10deg)
+
+    .main-img
+      z-index: 3
+      position: absolute
+      bottom: 0
+      left: -20%
+      right: 0
+      height: 100%
+      background: url('https://images.unsplash.com/photo-1484036218807-91efe1baff2f?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=')
+      background-position: top
+      background-size: cover
+      animation: main-img 0.5s forwards linear
+
+    .color-overlay
+      z-index: 5
+      position: absolute
+      top: -100%
+      left: -20%
+      right: 0
+      height: 100%
+      background: rgba(#A64CA6, 0.0)
+      animation: color-overlay 1s forwards linear

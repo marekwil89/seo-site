@@ -5,16 +5,6 @@ var landElements = [
     animationName: "slideInUp"
   },
   {
-    elementClass: ".event",
-    sectionClass: ".timeline-section",
-    animationName: "slideInUp"
-  },
-  {
-    elementClass: ".office-address",
-    sectionClass: ".form-section",
-    animationName: "slideInUp"
-  },
-  {
     elementClass: ".overlay-square",
     sectionClass: ".team-section",
     animationName: "moveSquare"
@@ -50,5 +40,3 @@ $(window).scroll(function(){
     }
   }
 });
-
-// moveShape
