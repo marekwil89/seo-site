@@ -245,6 +245,20 @@ table {
   margin: 5px 0;
   text-indent: 20px; }
 
+@media screen and (max-width: 1020px) {
+  .form-section article {
+    width: 100%; } }
+
+@media screen and (max-width: 800px) {
+  .form-section article {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .form-section article form, .form-section article aside {
+    width: 100%;
+    margin: 0; } }
+
 .hire-section {
   min-height: 40vh;
   display: -ms-flexbox;
@@ -689,11 +703,11 @@ table {
 
 @media (max-width: 750px) {
   .stats-section .stats-box .stat {
+    margin-bottom: 30px;
     width: calc(100% * (2/4) - 5px - 5px); } }
 
 @media (max-width: 500px) {
   .stats-section .stats-box .stat {
-    margin-bottom: 30px;
     width: calc(100% * (4/4) - 5px - 5px); } }
 
 .team-section {
