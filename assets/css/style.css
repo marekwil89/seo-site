@@ -165,106 +165,85 @@ table {
   font-weight: 400; }
 
 .form-section {
-  padding: 0 0 100px 0;
-  width: 100%;
+  padding: 50px 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 30px 0;
   position: relative;
   overflow: hidden; }
 
 .form-section .overlay-rectangle {
-  z-index: -1;
-  -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 45%;
+  right: 0;
+  width: 50%;
   height: 100%;
-  background: rgba(63, 55, 96, 0.9); }
+  background: rgba(63, 55, 96, 0.7);
+  -ms-transform: skew(-15deg);
+      transform: skew(-15deg); }
 
-.form-section aside {
-  width: 600px;
+.form-section article {
+  width: 1000px;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #dadada;
+  background: #ffffff;
+  position: relative; }
+
+.form-section article form {
+  width: 60%;
+  padding: 20px;
+  margin-right: 50px; }
+
+.form-section article form h3 {
+  margin-bottom: 50px;
+  font-size: 27px;
+  font-weight: 700; }
+
+.form-section article form fieldset {
+  margin: 25px 0; }
+
+.form-section article form fieldset legend {
+  margin-bottom: 5px; }
+
+.form-section article form fieldset input, .form-section article form fieldset textarea {
+  width: 100%;
+  border: 1px solid #dadada;
+  padding: 0 7px;
+  line-height: 50px; }
+
+.form-section article form fieldset input:focus, .form-section article form fieldset input:active, .form-section article form fieldset textarea:focus, .form-section article form fieldset textarea:active {
+  outline: none;
+  border: 1px solid #a64ca6; }
+
+.form-section article aside {
+  width: 40%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 20px;
   -ms-flex-pack: center;
-      justify-content: center;
-  position: relative;
-  overflow: hidden; }
+      justify-content: center; }
 
-.form-section aside h3 {
+.form-section article aside h3 {
   margin-bottom: 25px;
   font-size: 27px;
   font-weight: 700; }
 
-.form-section aside .office-address {
-  border-top: 1px solid #dadada;
-  margin: 30px 0;
+.form-section article aside .office-address {
+  margin: 10px 0;
   padding: 20px 0;
   opacity: 1; }
 
-.form-section aside .office-address h4 {
+.form-section article aside .office-address h4 {
   margin-bottom: 10px;
   font-weight: 700; }
 
-.form-section aside .office-address p {
+.form-section article aside .office-address p {
   margin: 5px 0;
   text-indent: 20px; }
-
-.form-section form {
-  border: 1px solid #dadada;
-  background: #FFFFFF;
-  padding: 20px;
-  margin-right: 50px;
-  width: 700px;
-  z-index: 99; }
-
-.form-section form h3 {
-  margin-bottom: 50px;
-  font-size: 27px;
-  font-weight: 700; }
-
-.form-section form fieldset {
-  margin: 25px 0; }
-
-.form-section form fieldset legend {
-  margin-bottom: 5px; }
-
-.form-section form fieldset input, .form-section form fieldset textarea {
-  width: 100%;
-  border: 1px solid #dadada;
-  padding: 0 7px;
-  line-height: 50px; }
-
-.form-section form fieldset input:focus, .form-section form fieldset input:active, .form-section form fieldset textarea:focus, .form-section form fieldset textarea:active {
-  outline: none;
-  border: 1px solid #a64ca6; }
-
-@media (max-width: 1420px) {
-  .form-section aside {
-    width: 40%; }
-  .form-section form {
-    width: 60%; } }
-
-@media (max-width: 800px) {
-  .form-section {
-    display: block; }
-  .form-section aside {
-    width: 100%; }
-  .form-section form {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 50px; }
-  .form-section .overlay-rectangle {
-    bottom: 10%;
-    width: 500px;
-    height: 350px; } }
 
 .hire-section {
   min-height: 40vh;
@@ -385,7 +364,6 @@ table {
 
 .main-header article {
   width: 50%;
-  background: white;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -448,9 +426,6 @@ table {
   left: -20%;
   right: 0;
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1484036218807-91efe1baff2f?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
-  background-position: top;
-  background-size: cover;
   animation: main-img 0.5s forwards linear; }
 
 .main-header aside .color-overlay {
@@ -640,16 +615,15 @@ table {
   width: calc(100% * (1/3) - 20px - 20px);
   margin: 20px;
   padding: 20px;
-  border: 1px solid #dadada;
+  border: 2px solid #dadada;
   transition: 0.3s all; }
 
 .service-section .services-box .service:hover {
-  -ms-transform: translateY(-10px);
-      transform: translateY(-10px);
-  box-shadow: 0px 25px 41px -16px #555555; }
+  border: 2px solid #A64CA6;
+  box-shadow: 0px 25px 41px -16px rgba(166, 76, 166, 0.8); }
 
 .service-section .services-box .service figure {
-  padding: 20px 60px; }
+  padding: 60px 100px; }
 
 .service-section .services-box .service figure img {
   width: 100%; }
@@ -740,7 +714,7 @@ table {
   left: -400px;
   width: 1000px;
   height: 700px;
-  background: #fc86b1; }
+  background: #cb8dcb; }
 
 .team-section figure {
   width: 60%;
@@ -799,7 +773,7 @@ table {
   top: 50%;
   height: 80%;
   width: 2px;
-  background: #191919;
+  background: #a64ca6;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
 
@@ -825,7 +799,7 @@ table {
       transform: translate(-50%, -50%);
   width: 25px;
   height: 25px;
-  background: #3d1c3d;
+  background: #a64ca6;
   overflow: hidden; }
 
 .timeline-section .timeline-box li:last-child {
@@ -1081,11 +1055,9 @@ footer .design-by a:hover {
 
 @keyframes moveRectangle {
   from {
-    left: -100%;
-    transform: rotate(0deg); }
+    right: -100%; }
   to {
-    left: 0px;
-    transform: rotate(-4deg);
+    right: 0px;
     opacity: 1; } }
 
 .moveRectangle {
@@ -1125,14 +1097,15 @@ footer .design-by a:hover {
   background-repeat: no-repeat; }
 
 .img-config.header-img {
-  background-image: url("../images/header.png"); }
+  background-image: url("../images/main-header.jpg");
+  background-position: top;
+  background-size: cover; }
 
 .img-config.blockquote-img {
   background-image: url("../images/blockquote-bg.png"); }
 
 .img-config.chart-img {
-  background-image: url("../images/chart-bg.jpg");
-  background-attachment: fixed; }
+  background-image: url("../images/chart-bg.jpg"); }
 
 .img-config.panel1-img {
   background-image: url("../images/panel1.jpg"); }
@@ -1148,6 +1121,11 @@ footer .design-by a:hover {
 
 .img-config.panel5-img {
   background-image: url("../images/panel5.jpg"); }
+
+.img-config.contact-img {
+  background-image: url("../images/contact-bg.jpg");
+  background-position: left;
+  background-size: 100%; }
 
 .land-elem {
   transition: 1.5s all;

@@ -12,108 +12,83 @@
   font-size: 25px
   margin: 0 auto
 
-
 .success-message
   color: #5cb85c
   text-align: center
   font-weight: 400
 
 .form-section
-  padding: 0 0 100px 0
-  width: 100%
+  padding: 50px 0
   display: flex
   justify-content: center
-  margin: 30px 0
   position: relative
   overflow: hidden
 
   .overlay-rectangle
-    z-index: -1
-    transform: rotate(0deg)
     position: absolute
     top: 0
-    left: -100%
-    width: 45%
+    right: 0
+    width: 50%
     height: 100%
-    background: rgba(#3f3760, 0.9)
+    background: rgba(#3f3760, 0.7)
+    transform: skew(-15deg)    
 
-  aside
-    width: 600px
+  article
+    width: 1000px
     display: flex
-    flex-direction: column
-    padding: 20px
-    justify-content: center
-    position: relative
-    overflow: hidden
-
-    h3
-      margin-bottom: 25px
-      font-size: 27px
-      font-weight: 700
-
-    .office-address
-      border-top: 1px solid #dadada
-      margin: 30px 0
-      padding: 20px 0
-      opacity: 1
-
-      h4
-        margin-bottom: 10px
-        font-weight: 700
-
-      p
-        margin: 5px 0
-        text-indent: 20px
-
-  form
     border: 1px solid #dadada
-    background: #FFFFFF
-    padding: 20px
-    margin-right: 50px
-    width: 700px
-    z-index: 99
-
-    h3
-      margin-bottom: 50px
-      font-size: 27px
-      font-weight: 700
-
-    fieldset
-      margin: 25px 0
-
-      legend
-        margin-bottom: 5px
-
-      input, textarea
-        width: 100%
-        border: 1px solid #dadada
-        padding: 0 7px
-        line-height: 50px
-
-        &:focus, &:active
-          outline: none
-          border: 1px solid #a64ca6
-
-@media (max-width: 1420px)
-  .form-section
-    aside
-      width: 40%
+    background: #ffffff
+    position: relative
 
     form
       width: 60%
+      padding: 20px
+      margin-right: 50px
 
-@media (max-width: 800px)
-  .form-section
-    display: block
+      h3
+        margin-bottom: 50px
+        font-size: 27px
+        font-weight: 700
+
+      fieldset
+        margin: 25px 0
+
+        legend
+          margin-bottom: 5px
+
+        input, textarea
+          width: 100%
+          border: 1px solid #dadada
+          padding: 0 7px
+          line-height: 50px
+
+          &:focus, &:active
+            outline: none
+            border: 1px solid #a64ca6
+
     aside
-      width: 100%
+      width: 40%
+      display: flex
+      flex-direction: column
+      padding: 20px
+      justify-content: center
+      
+      h3
+        margin-bottom: 25px
+        font-size: 27px
+        font-weight: 700
 
-    form
-      width: 100%
-      margin-right: 0
-      margin-bottom: 50px
+      .office-address
+        margin: 10px 0
+        padding: 20px 0
+        opacity: 1
 
-    .overlay-rectangle
-      bottom: 10%
-      width: 500px
-      height: 350px
+        h4
+          margin-bottom: 10px
+          font-weight: 700
+
+        p
+          margin: 5px 0
+          text-indent: 20px
+
+

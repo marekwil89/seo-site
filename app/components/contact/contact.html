@@ -2,57 +2,63 @@
   <h2>Kontakt</h2>
 </header>
 
-<section class="form-section">
 
-  <form name="contact" ng-submit="sendMessage(message)">
-    <h3>Zamów analizę SEO</h3>
-    <fieldset>
-      <legend>Imię i Nazwisko:</legend>
-      <input ng-model="message.name" name="name" placeholder="Jan Kowalski" validator="required, maxlength=20, minlength=5" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 20" minlength-error-message="minimalna ilość znaków to 5">
-    </fieldset>
-
-    <fieldset>
-      <legend>Telefon:</legend>
-      <input ng-model="message.phone" name="phone" placeholder="888-888-888" validator="required, maxlength=10, number" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 10" number-error-message="Pole musi się składać z liczb">
-    </fieldset>
-
-    <fieldset>
-      <legend>Email:</legend>
-      <input ng-model="message.email" name="email" placeholder="przykladowy@mail.com" validator="required, maxlength=20, email" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 20" email-error-message="To nie jest email">
-    </fieldset>
-
-    <fieldset>
-      <legend>Adres strony internetowej</legend>
-      <input ng-model="message.siteUrl" name="web" placeholder="www.google.pl" validator="required, maxlength=50, url" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 50" url-error-message="To nie jest adres internetowy">
-    </fieldset>
-
-    <fieldset>
-      <legend>Pytania i uwagi</legend>
-      <textarea ng-model="message.text" name="text" placeholder="przykładowy tekst" validator="required, maxlength=200" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 200"></textarea>
-    </fieldset>
-
-    <div ng-bind-html="successMessage" class="success-box"></div>
-
-    <fieldset>
-      <button ng-disabled="contact.$invalid || message.name.length==0 ||
-    message.phone.length==0 || message.email.length==0 ||
-    message.siteUrl.length==0 || message.text.length==0" type="submit" class="btn-main">Wyślij</button>
-    </fieldset>
-  </form>
-
-  <aside>
-    <h3>Dwa biura</h3>
-    <address ng-repeat="place in markers" class="office-address land-elem">
-      <h4>{{place.city}}</h4>
-      <p>{{place.street}}</p>
-      <p>{{place.zip}} {{place.city}}</p>
-      <p>{{place.phone}}</p>
-    </address>
-  </aside>
+<section class="form-section img-config contact-img">
 
   <span class="overlay-rectangle land-elem"></span>
 
+  <article>
 
+
+
+    <form name="contact" ng-submit="sendMessage(message)">
+
+      <h3>Zamów analizę SEO</h3>
+      <fieldset>
+        <legend>Imię i Nazwisko:</legend>
+        <input ng-model="message.name" name="name" placeholder="Jan Kowalski" validator="required, maxlength=20, minlength=5" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 20" minlength-error-message="minimalna ilość znaków to 5">
+      </fieldset>
+
+      <fieldset>
+        <legend>Telefon:</legend>
+        <input ng-model="message.phone" name="phone" placeholder="888-888-888" validator="required, maxlength=10, number" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 10" number-error-message="Pole musi się składać z liczb">
+      </fieldset>
+
+      <fieldset>
+        <legend>Email:</legend>
+        <input ng-model="message.email" name="email" placeholder="przykladowy@mail.com" validator="required, maxlength=20, email" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 20" email-error-message="To nie jest email">
+      </fieldset>
+
+      <fieldset>
+        <legend>Adres strony internetowej</legend>
+        <input ng-model="message.siteUrl" name="web" placeholder="www.google.pl" validator="required, maxlength=50, url" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 50" url-error-message="To nie jest adres internetowy">
+      </fieldset>
+
+      <fieldset>
+        <legend>Pytania i uwagi</legend>
+        <textarea ng-model="message.text" name="text" placeholder="przykładowy tekst" validator="required, maxlength=200" required-error-message="Pole nie może być puste" maxlength-error-message="maksymalna ilość znaków to 200"></textarea>
+      </fieldset>
+
+      <div ng-bind-html="successMessage" class="success-box"></div>
+
+      <fieldset>
+        <button ng-disabled="contact.$invalid || message.name.length==0 ||
+      message.phone.length==0 || message.email.length==0 ||
+      message.siteUrl.length==0 || message.text.length==0" type="submit" class="btn-main">Wyślij</button>
+      </fieldset>
+    </form>
+    <aside>
+      <h3>Dwa biura</h3>
+      <address ng-repeat="place in markers" class="office-address land-elem">
+        <h4>{{place.city}}</h4>
+        <p>{{place.street}}</p>
+        <p>{{place.zip}} {{place.city}}</p>
+        <p>{{place.phone}}</p>
+      </address>
+    </aside>
+  </article>
+
+  
 
 </section>
 
