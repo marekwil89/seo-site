@@ -181,7 +181,9 @@ table {
   height: 100%;
   background: rgba(63, 55, 96, 0.7);
   -ms-transform: skew(-15deg);
-      transform: skew(-15deg); }
+      transform: skew(-15deg);
+  -webkit-filter: blur(1.3px);
+          filter: blur(1.3px); }
 
 .form-section article {
   width: 1000px;
@@ -440,6 +442,8 @@ table {
   left: -20%;
   right: 0;
   height: 100%;
+  -webkit-filter: blur(1.3px);
+          filter: blur(1.3px);
   animation: main-img 0.5s forwards linear; }
 
 .main-header aside .color-overlay {
@@ -626,7 +630,7 @@ table {
       flex-wrap: wrap; }
 
 .service-section .services-box .service {
-  width: calc(100% * (1/3) - 20px - 20px);
+  width: calc(100% * (1/3) - 21px - 21px);
   margin: 20px;
   padding: 20px;
   border: 2px solid #dadada;
@@ -728,7 +732,9 @@ table {
   left: -400px;
   width: 1000px;
   height: 700px;
-  background: #cb8dcb; }
+  background: #cb8dcb;
+  -webkit-filter: blur(1.3px);
+          filter: blur(1.3px); }
 
 .team-section figure {
   width: 60%;

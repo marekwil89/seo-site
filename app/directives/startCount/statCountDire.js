@@ -11,7 +11,7 @@ angular.module("statCountDire", [])
     },
     link: function($scope) {
       $scope.stat = 0
-      var halfSectionHeight = angular.element('.stats-section')[0].offsetHeight/400
+      var halfSectionHeight = angular.element('.stats-section')[0].offsetHeight/1.4
       var startCount = true
       var finish = parseInt($scope.finish)
       var start = parseInt($scope.start)

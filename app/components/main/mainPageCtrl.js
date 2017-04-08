@@ -19,6 +19,7 @@ angular.module("mainPageModule", [])
   $scope.gotoElement = function (eID){
     $location.hash('bottom');
     anchorSmoothScroll.scrollTo(eID);
+    $location.url($location.path());
   };
 })
 
