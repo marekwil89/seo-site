@@ -30,13 +30,13 @@ angular.module("statCountDire", [])
 
 
               var count = $interval(function(){
-              start+=1
+              start+=speed
               if(start >= finish){
                 return $interval.cancel(count);
               }
               $scope.stat = start + plus
 
-            }, speed);
+            }, 40);
           }  
         }
       });

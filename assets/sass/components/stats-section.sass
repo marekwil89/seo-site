@@ -8,20 +8,21 @@
   flex-direction: column
   
   .stats-box
-    width: 900px
+    margin: 30px 0
+    width: 1200px
     display: flex
     flex-wrap: wrap
     
     .stat
       text-align: center
-      width: calc(100% * (1/4) - 5px - 5px)
-      margin: 5px
+      width: calc(100% * (1/4) - 20px - 20px)
+      margin: 20px
 
       .number
         font-size: 50px
         margin: 10px 0
 
-@media (max-width: 920px)
+@media (max-width: 1220px)
   .stats-section
     .stats-box
       width: 100%
@@ -30,9 +31,10 @@
 @media (max-width: 750px)
   .stats-section
     .stats-box
+      margin: 30px auto
       .stat
-        margin-bottom: 30px
-        width: calc(100% * (2/4) - 5px - 5px)
+        margin: 20px
+        width: calc(100% * (2/4) - 20px - 20px)
 
 
 @media (max-width: 500px)

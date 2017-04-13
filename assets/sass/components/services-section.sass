@@ -8,12 +8,12 @@
   flex-direction: column
   
   .services-box
-    width: 1400px
+    width: 1600px
     display: flex
     flex-wrap: wrap
     
     .service
-      width: calc(100% * (1/3) - 21px - 21px)
+      width: calc(100% * (1/4) - 21px - 21px)
       margin: 20px
       padding: 20px
       border: 2px solid #dadada
@@ -24,7 +24,7 @@
         box-shadow: 0px 25px 41px -16px rgba(#A64CA6,0.8)
       
       figure
-        padding: 60px 100px
+        padding: 60px
         img
           width: 100%
           
@@ -36,26 +36,38 @@
         text-align: justify
         line-height: 25px
 
-@media (max-width: 1520px)
+@media (max-width: 1620px)
   .service-section
     .services-box
       width: 100%
       margin: 0 20px
+      .service
+        figure
+          padding: 50px
 
-
-@media (max-width: 1000px)
+@media (max-width: 1200px)
   .service-section
     .services-box
       .service
         width: calc(100% * (2/4) - 20px - 20px)
         figure
-          padding: 20px
+          padding: 80px
 
         p
           text-align: left
+
+@media (max-width: 800px)
+  .service-section
+    .services-box
+      .service
+        figure
+          padding: 30px
+
 
 @media (max-width: 550px)
   .service-section
     .services-box
       .service
         width: calc(100% * (4/4) - 20px - 20px)
+        figure
+          padding: 45px
