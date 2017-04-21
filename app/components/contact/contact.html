@@ -53,7 +53,7 @@
         <h4>{{place.city}}</h4>
         <p>{{place.street}}</p>
         <p>{{place.zip}} {{place.city}}</p>
-        <p>{{place.phone}}</p>
+        <p ng-if="place.phone">{{place.phone}}</p>
       </address>
     </aside>
   </article>

@@ -1,33 +1,31 @@
 angular.module("contactModule", [])
 
-.controller('contactCtrl', function($scope, NgMap, $http, $timeout, $location){
+.controller('contactCtrl', function($scope, NgMap, $http, $timeout, $location, $sce){
 
   $scope.successMessage = ""
 
   $scope.message = {
-    name: "",
-    phone: "",
-    email: "",
-    siteUrl: "",
-    text: ""
+    name: "Marek Wilczek",
+    phone: "888888888",
+    email: "marekwil89@gmail.com",
+    siteUrl: "www.google.pl",
+    text: "Cześć Piotr, sprawdzam czy mail działa"
   }
 
 
   $scope.sendMessage = function(message){
+    //seosite3000///manta123///piotr@gabalewicz.pl
+    var url = "https://script.google.com/macros/s/AKfycbwH5WebxZcG8rKDjTtgUBVFGKpZuK9RqYpSFJuyEZdP7xX_Oyw/exec"
+    var message = "<h2>Autor " + message.name + " | " + message.email + "</h2>" + "<p>Napisał: " + message.text + "</p>" + "<p>Telefon: " + message.phone + "</p>" + "<p>Adres strony: " + message.siteUrl + "</p>"
 
-    // var message = message.name + " <h2>napisał</h2> " + message.text;
-    var message = "<h2>Autor " + message.name + " | " + message.email + "</h2>" + "<p>Napisał: " + message.text + "</p>" + "<p>Telefon: " + message.phone + "</p>" + "<p>Adres strony: " + message.siteUrl + "</p>" 
-    var url = "https://script.google.com/macros/s/AKfycby-32X1AvMqBU0AQ0Av2BSBD6K9QOtWEjfchYI7zxZEDk9F-qdt/exec"
-    console.log(message)
 
     $http({
       method: 'POST',
       url: url,
-      data: $.param({Wiadomość: message}),
+      data: $.param({Message: message}),
       headers: {'Content-Type': 'application/x-www-form-urlencoded'}
     })
 
-    //$http.post( 'https://script.google.com/macros/s/AKfycby-32X1AvMqBU0AQ0Av2BSBD6K9QOtWEjfchYI7zxZEDk9F-qdt/exec', message)
 
     $scope.successMessage = '<i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i>'
     $timeout(function(){
@@ -46,18 +44,17 @@ angular.module("contactModule", [])
 
   $scope.markers = [
     {
-      fullAddress: "Warszawa Pałac Kultury i Nauki", 
-      city: "Warszawa",
-      street: "Pałac Kultury i Nauki",
-      zip: "05-077",
-      phone: "505 737 246"
+      fullAddress: "Wrocław łukasiewicza 8 lok. 5", 
+      city: "Wrocław",
+      street: "łukasiewicza 8 lok. 5",
+      zip: "50-371",
+      phone: "662-056-143"
     },
     {
-      fullAddress: "Wrocław Hotel. Jana Pawła", 
-      city: "Wrocław",
-      street: "Hotel. Jana Pawła",
-      zip: "05-088",
-      phone: "777 777 778"
+      fullAddress: "Warszawa Herbu Janina 3B", 
+      city: "Warszawa",
+      street: "Herbu Janina 3B",
+      zip: "02-972"
     }
   ];
 })
