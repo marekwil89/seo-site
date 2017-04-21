@@ -5,16 +5,16 @@ angular.module("contactModule", [])
   $scope.successMessage = ""
 
   $scope.message = {
-    name: "Marek Wilczek",
-    phone: "888888888",
-    email: "marekwil89@gmail.com",
-    siteUrl: "www.google.pl",
-    text: "Cześć Piotr, sprawdzam czy mail działa"
+    name: "",
+    phone: "",
+    email: "",
+    siteUrl: "",
+    text: ""
   }
 
 
   $scope.sendMessage = function(message){
-    //seosite3000///manta123///piotr@gabalewicz.pl
+    //seosite3000///piotr@gabalewicz.pl
     var url = "https://script.google.com/macros/s/AKfycbwH5WebxZcG8rKDjTtgUBVFGKpZuK9RqYpSFJuyEZdP7xX_Oyw/exec"
     var message = "<h2>Autor " + message.name + " | " + message.email + "</h2>" + "<p>Napisał: " + message.text + "</p>" + "<p>Telefon: " + message.phone + "</p>" + "<p>Adres strony: " + message.siteUrl + "</p>"
 

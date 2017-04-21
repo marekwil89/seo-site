@@ -1,6 +1,5 @@
 angular.module('loaderDire', [])
 
-
 .directive('loader', function($http, $timeout){
   return {
     restrict: 'E',
@@ -15,9 +14,9 @@ angular.module('loaderDire', [])
           if(v){
               elm.show();
           }else{
-            // $timeout(function(){
+            $timeout(function(){
               elm.hide()
-            // }, 1000) 
+            }, 1000) 
           }
       });
     }
