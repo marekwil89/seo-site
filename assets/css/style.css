@@ -839,10 +839,13 @@ table {
   -ms-flex-direction: column;
       flex-direction: column;
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; }
 
 .timeline-section .timeline-box {
-  position: relative; }
+  position: relative;
+  background: #FFFFFF; }
 
 .timeline-section .timeline-box:before {
   content: '';
@@ -1175,6 +1178,20 @@ footer .design-by a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+.img-config.words-cloud {
+  position: absolute;
+  -ms-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+  width: 1000px;
+  height: 500px;
+  right: -400px;
+  bottom: -200px;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  background-image: url("../images/word.png");
+  background-position: center;
+  background-size: cover; }
 
 .img-config.header-img {
   background-image: url("../images/main-header.jpg");
