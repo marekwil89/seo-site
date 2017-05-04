@@ -31,7 +31,7 @@
       overflow: hidden
       
       h1
-        text-indent: 45px
+        margin-left: 40px
         color: #333333
         font-size: 60px
         font-weight: 700
@@ -94,34 +94,44 @@
       animation: color-overlay 1s forwards linear
 
 
-@media screen and (max-width: 1300px)
+@media screen and (max-width: 1450px)
   .main-header
     article
       width: 60%
     aside
       width: 40%
 
+@media screen and (max-width: 1250px)
+  .main-header
+    article
+      width: 70%
+    aside
+      width: 30%
+
 @media screen and (max-width: 1050px)
+  .main-header
+    article
+      width: 60%
+
+    aside
+      width: 40%
+
+@media screen and (max-width: 720px)
   .main-header
     article
       width: 100%
       .author-box
-        margin-left: 0
-    aside
-      display: none
+        margin-left: 10px
 
-@media screen and (max-width: 620px)
-  .main-header
-    article
-      .author-box
-    
         h1
           font-size: 35px
-          text-indent: 20px
           font-weight: 700
     
         .main-text
           font-size: 18px
     
         .author
-          font-size: 15px    
+          font-size: 15px
+
+    aside
+      display: none   
