@@ -47,42 +47,21 @@
   <span class="overlay-shape"></span>
 </section>
 
-<section class="service-section">
+<section class="services-section">
   <div class="info-box">
     <h2>Sprawdź, jak możemy pomóc Twojej firmie</h2>
     <p>Wysoka pozycja w wyszukiwarce i obecność w Internecie to elementy, które dynamicznie wspomogą rozwój i <span class="bold">rozpoznawalność</span> Twojej firmy. W Nazwa Firmy jesteśmy tego świadomi, dlatego codziennie prowadzimy działania, dzięki którym pozyskasz nowych Klientów:</p>
   </div>
   <div class="services-box">
-    <a class="service land-elem">
+    <a ng-repeat="service in services" href="#/service/{{service.link}}" class="service land-elem">
       <figure>
-        <img src="./assets/images/seo-icon1.png" alt="" />
+        <img src="./assets/images/seo-icon{{$index}}.png" alt="" />
       </figure>
-      <h3> Audyt dotychczasowej pozycji w wyszukiwarce</h3>
-      <p>Nie jesteś pewien skuteczności swoich obecnych działań lub zauważyłeś spadek w wynikach wyszukiwania? Spokojnie, zbadamy to dla Ciebie i wyróżnimy wszystkie niepokojące czynniki, które miały na to wpływ. </p>
+      <h3>{{service.title}}</h3>
+      <p>{{service.text}}</p>
     </a>
-    <a class="service land-elem">
-      <figure>
-        <img src="./assets/images/seo-icon2.png" alt="" />
-      </figure>
-      <h3>Prywatne konsultacja i szkolenia z SEO</h3>
-      <p>Chcesz poznać techniki SEO i w przyszłości sam wpływać na Twoją pozycję w wyszukiwarce? Sprawdź, jakie szkolenia dla Ciebie przygotowaliśmy lub zarezerwuj prywatna konsultację, aby omówić nie jasne dla Ciebie kwestie.</p>
-    </a>
-    <a class="service land-elem">
-      <figure>
-        <img src="./assets/images/seo-icon3.png" alt="" />
-      </figure>
-      <h3>Pozycjonowanie Long Tail</h3>
-      <p>Wykorzystaj pomysłowość Twoich potencjalnych Klientów zestawiających ze sobą różne frazy w zapytaniu. Odpowiednio przeprowadzone pozycjonowanie typu Long Tail zapewni Ci długotrwałą, wysoką pozycję w wyszukiwarce.</p>
-    </a>
-    <a class="service land-elem">
-      <figure>
-        <img src="./assets/images/seo-icon4.png" alt="" />
-      </figure>
-      <h3>Usuwanie filtra w Google</h3>
-      <p>Jeżeli w ostatnim czasie Twoja strona odnotowała znacząco mniejszy ruch to prawdopodobniej Google nałożył na nią karę. Nie ma sposób na obejście jej, ale z naszą pomocą, pozbędziesz się elementów za to odpowiedzialnych.</p>
-    </a>
-
   </div>
+
 </section>
 
 <section class="hire-section">

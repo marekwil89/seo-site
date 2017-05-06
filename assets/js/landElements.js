@@ -1,7 +1,7 @@
 var landElements = [
   {
     elementClass: ".service",
-    sectionClass: ".service-section",
+    sectionClass: ".services-section",
     animationName: "slideInUp"
   },
   {

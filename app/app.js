@@ -4,6 +4,7 @@ angular.module("app", [
 	'footerDire',
 	'mainPageModule',
   'contactModule',
+  'servicesModule',
   'aboutModule',
 	'statCountDire',
 	'loaderDire',

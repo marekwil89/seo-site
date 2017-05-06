@@ -1,6 +1,9 @@
 angular.module("mainPageModule", [])
 
-.controller('mainPageCtrl', function($scope, anchorSmoothScroll, $location){
+.controller('mainPageCtrl', function($scope, anchorSmoothScroll, $location, servicesList){
+
+  $scope.services = servicesList.getServices()
+
 
   $scope.resizePanel = function(event){
     var currentElem = angular.element(event.currentTarget)
@@ -20,6 +23,35 @@ angular.module("mainPageModule", [])
     $location.hash('bottom');
     anchorSmoothScroll.scrollTo(eID);
     $location.url($location.path());
+  };
+})
+
+.service('servicesList', function(){
+  this.servicesList = [
+    {
+      link: 'audyt',
+      title: 'Audyt dotychczasowej pozycji w wyszukiwarce',
+      text: 'Nie jesteś pewien skuteczności swoich obecnych działań lub zauważyłeś spadek w wynikach wyszukiwania? Spokojnie, zbadamy to dla Ciebie i wyróżnimy wszystkie niepokojące czynniki, które miały na to wpływ.'
+    },
+    {
+      link: 'szkolenia',
+      title: 'Prywatne konsultacja i szkolenia z SEO',
+      text: 'Chcesz poznać techniki SEO i w przyszłości sam wpływać na Twoją pozycję w wyszukiwarce? Sprawdź, jakie szkolenia dla Ciebie przygotowaliśmy lub zarezerwuj prywatna konsultację, aby omówić nie jasne dla Ciebie kwestie.'
+    },
+    {
+      link: 'pozycjonowanie',
+      title: 'Pozycjonowanie Long Tail',
+      text: 'Wykorzystaj pomysłowość Twoich potencjalnych Klientów zestawiających ze sobą różne frazy w zapytaniu. Odpowiednio przeprowadzone pozycjonowanie typu Long Tail zapewni Ci długotrwałą, wysoką pozycję w wyszukiwarce.'
+    },
+    {
+      link: 'google',
+      title: 'Usuwanie filtra w Google',
+      text: 'Jeżeli w ostatnim czasie Twoja strona odnotowała znacząco mniejszy ruch to prawdopodobniej Google nałożył na nią karę. Nie ma sposób na obejście jej, ale z naszą pomocą, pozbędziesz się elementów za to odpowiedzialnych.'
+    }
+  ];
+
+  this.getServices = function(){
+    return this.servicesList;
   };
 })
 

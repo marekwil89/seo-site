@@ -19,6 +19,11 @@ angular.module("routesModule", ['ngRoute'])
       controller: 'contactCtrl'
     });
 
+  $routeProvider.when('/service/:id', {
+      templateUrl: 'app/components/services/services.html',
+      controller: 'servicesCtrl'
+    });
+
   $routeProvider.otherwise({
         redirectTo: '/main-page'
     });
