@@ -1,10 +1,38 @@
+.hire-dark-bg
+  background-color: #191919
+
+.hire-dark-color
+  color: #111111
+
+.hire-light-bg
+  background: #FFFFFF
+
+.hire-light-color
+  color: #F1F1F1
+
+.hire-before-light-bg
+  &:before
+    background-color: #F1F1F1
+
+.hire-before-dark-bg
+  &:before
+    background-color: #111111
+
+.overlay-light
+  &:before
+    background: rgba(lighten(#a64ca6, 45%), 1)
+
+.overlay-dark
+  &:before
+    background: rgba(darken(#a64ca6, 10%), 1)
+
+
 .hire-section
   min-height: 40vh
   display: flex
   justify-content: center
   align-items: center
   flex-direction: column
-  background: #191919
   position: relative
   overflow: hidden
   padding: 20px
@@ -16,7 +44,7 @@
     left: -140%
     width: 140%
     height: 100% 
-    background: rgba(darken(#a64ca6, 10%), 1)
+    // background: rgba(darken(#a64ca6, 1%), 0.7)
     transition: 0.5s all linear
 
   &:hover
@@ -28,16 +56,14 @@
   .fa-bell-o
     animation: ring 2s infinite
     margin-bottom: 20px
-    color: #f1f1f1
 
   p
-    color: #f1f1f1
-    font-weight: 400
+    font-weight: 300
     margin-bottom: 30px
     z-index: 80
+    line-height: 25px
 
   .hire-link
-    color: #f1f1f1
     text-transform: uppercase
     font-weight: 700
     font-size: 40px
@@ -52,7 +78,6 @@
       width: 0
       height: 3px
       left: 0
-      background-color: #f1f1f1
       transition: 0.3s all
 
     &:hover

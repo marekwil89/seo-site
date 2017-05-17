@@ -44,7 +44,10 @@
 </section>
 
 <section class="chart-section img-config chart-img">
-  <span class="overlay-shape"></span>
+  <span class="overlay-shape">
+    <h3>Chart Section<span class="bold">.</span></h3>
+    <p>this is only way to find it</p>
+  </span>
 </section>
 
 <section class="services-section">
@@ -53,7 +56,7 @@
     <p>Wysoka pozycja w wyszukiwarce i obecność w Internecie to elementy, które dynamicznie wspomogą rozwój i <span class="bold">rozpoznawalność</span> Twojej firmy. W Nazwa Firmy jesteśmy tego świadomi, dlatego codziennie prowadzimy działania, dzięki którym pozyskasz nowych Klientów:</p>
   </div>
   <div class="services-box">
-    <a ng-repeat="service in services" href="#/service/{{service.link}}" class="service land-elem">
+    <a ng-repeat="service in services" href="#/usluga/{{service.link}}" class="service land-elem">
       <figure>
         <img src="./assets/images/seo-icon{{$index}}.png" alt="" />
       </figure>
@@ -64,10 +67,10 @@
 
 </section>
 
-<section class="hire-section">
-  <i class="fa fa-3x fa-bell-o" aria-hidden="true"></i>
-  <p>Konkurencja nie śpi. Nie daj jej szans i popraw swoją widoczność w Internecie już dziś!</p>
-  <a href="#/contact" class="hire-link" href="">ZAMÓW</a>
+<section class="hire-section hire-dark-bg overlay-dark">
+  <i class="fa fa-3x fa-bell-o hire-light-color" aria-hidden="true"></i>
+  <p class="hire-light-color">Konkurencja nie śpi. Nie daj jej szans i popraw swoją widoczność w Internecie już dziś!</p>
+  <a href="#/contact" class="hire-link hire-light-color hire-before-light-bg" href="">ZAMÓW</a>
 </section>
 
 <section class="panels-section">

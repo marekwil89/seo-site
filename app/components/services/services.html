@@ -1,32 +1,20 @@
-<header class="service-header img-config service-img0">
-<!--   <span class="overlay"></span> -->
-  <h2>{{service.title}}</h2>
+<header class="service-header img-config blockquote-img">
+  <h2>Usługi</h2>
 </header>
 
-<section class="service-section">
+<section class="services-section">
+  <div class="info-box">
+    <h2>Sprawdź, jak możemy pomóc Twojej firmie</h2>
+    <p>Wysoka pozycja w wyszukiwarce i obecność w Internecie to elementy, które dynamicznie wspomogą rozwój i <span class="bold">rozpoznawalność</span> Twojej firmy. W Nazwa Firmy jesteśmy tego świadomi, dlatego codziennie prowadzimy działania, dzięki którym pozyskasz nowych Klientów:</p>
+  </div>
+  <div class="services-box">
+    <a ng-repeat="service in services" href="#/usluga/{{service.link}}" class="service land-elem">
+      <figure>
+        <img src="./assets/images/seo-icon{{$index}}.png" alt="" />
+      </figure>
+      <h3>{{service.title}}</h3>
+      <p>{{service.text}}</p>
+    </a>
+  </div>
 
-  <article> <!-- Na czym polega -->
-    <h3>{{service.title}}</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fugiat magni possimus autem impedit accusamus incidunt itaque dignissimos eos, voluptas exercitationem illo molestias, doloribus dicta quod magnam iste rerum. Aut ad itaque porro. Asperiores minus laboriosam illo, doloremque quis suscipit dicta labore repudiandae magni sint id, obcaecati! Recusandae, mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, quae. In molestias error porro animi rem officiis reprehenderit dignissimos impedit minus dicta ea tenetur ullam, qui enim, voluptate ducimus aliquid cupiditate est, distinctio odio temporibus. Cum optio, excepturi saepe perspiciatis assumenda, molestias officia minima, cumque eveniet odit, dicta eos ad.</p>    
-  </article>
-  <ul>
-    <h3>Zalety</h3>
-    <li><i class="fa fa-2x fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, vero. Illo laboriosam, in porro odio voluptatem optio recusandae voluptatibus commodi?</li>
-    <li><i class="fa fa-2x fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim expedita vero ab amet sapiente dolorum nostrum nam, nobis aut! Veniam.</li>
-    <li><i class="fa fa-2x fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vel et numquam quidem quis dolores quas id ea mollitia ut.</li>
-    <li><i class="fa fa-2x fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero temporibus, repudiandae eaque fuga alias sunt, itaque obcaecati praesentium sit. Adipisci!</li>
-    <li><i class="fa fa-2x fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, dicta! A blanditiis iure praesentium unde accusamus perferendis numquam tenetur nobis.</li>
-    <li><i class="fa fa-2x fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eum facilis maxime cupiditate at voluptatem et eligendi? Tempora dolorem, ratione.</li>
-  </ul>
-
-</section>
-
-<section class="hire-section">
-  <i class="fa fa-3x fa-bell-o" aria-hidden="true"></i>
-  <p>Jeżeli masz pytania skontaktuj się z nami już teraz</p>
-  <a href="#/contact" class="hire-link" href="">Kontakt</a>
-</section>
-
-<section class="">
-  
 </section>

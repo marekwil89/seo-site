@@ -4,10 +4,43 @@
   overflow: hidden
 
   .overlay-shape
-    transform: skewX(-30deg)
     position: absolute
     background: rgba(#191919, 0.9)
-    width: 70%
+    width: 50%
     height: 100%
     left: -20%
     top: -100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 10px
+
+    h3
+      margin-left: 40px
+      color: #F1F1F1
+      font-size: 60px
+      font-weight: 700
+      margin-bottom: 10px
+      letter-spacing: 1.3px
+
+    p
+      margin-top: 20px
+      font-size: 17px
+      color: #F1F1F1
+      text-transform: uppercase
+      margin-left: 40px
+      line-height: 30px
+
+@media screen and (max-width: 820px)
+  .chart-section
+    .overlay-shape
+      width: 75%
+
+@media screen and (max-width: 500px)
+  .chart-section
+    .overlay-shape
+      width: 100%
+
+      h3
+        font-size: 45px
